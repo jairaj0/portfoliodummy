@@ -1,0 +1,44 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive; 
+}
+
+body{
+    background-image: linear-gradient(#114250 , #131514);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    height: inherit;
+    padding: 0 2rem;
+}
