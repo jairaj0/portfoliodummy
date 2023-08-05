@@ -8,7 +8,7 @@
 body{
     background-image: linear-gradient(#114250 , #131514);
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 p{
@@ -36,9 +36,16 @@ a{
     justify-content: center;
 }
 
+
 .container{
     max-width: 1300px;
     margin: 0 auto;
     height: inherit;
     padding: 0 2rem;
+}
+
+@media screen and (max-width: 647px) {
+    .container{
+        padding: 0 1rem;
+    }
 }

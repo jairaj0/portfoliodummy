@@ -4,10 +4,11 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 nav .logo{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -20,7 +21,7 @@ nav .logo span:first-child{
 
 nav .link{
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -47,5 +48,23 @@ nav .link:last-child{
 @media screen and (max-width : 1134px) {
     nav .logo , nav .link{
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    nav{
+        height: 70px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav .logo , nav .link{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    nav .logo , nav .link{
+        font-size: 18px;
     }
 }
