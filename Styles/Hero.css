@@ -253,15 +253,19 @@
 
     .hero .right{
         width: 100%;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .hero .right .info{
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         flex-direction: row;
-        min-width: 1200px;
-        justify-content: space-around;
+    }
+
+    .hero .right .info .values{
+        min-width: max-content;
+        margin: 0 1rem;
     }
 }
 
