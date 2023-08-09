@@ -1,0 +1,66 @@
+:root{
+    --light : #fff;
+    --nav-padding : 30px 0;
+    --logo-link : 20px;
+}
+
+nav{
+    padding: var(--nav-padding);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .logo span , .links .link{
+    color: var(--light);
+    font-size: var(--logo-link);
+}
+
+nav .logo span:first-child{
+    -webkit-text-stroke: 1px var(--light);
+    -moz-text-stroke: 1px var(--light);
+    text-stroke: 1px var(--light);
+    color: transparent;
+}
+
+nav .links .link:last-child{
+    margin-left: 1rem;
+}
+
+nav .links .link{
+    position: relative;
+}
+
+nav .links .link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: #114250;
+    top: calc( 50% - 2px );
+    transition: all .3s ease-in-out;
+}
+
+nav .links .link:hover:before{
+    width: 100%;
+}
+
+@media screen and (max-width : 647px) {
+    :root{
+        --nav-padding : 20px 0 ;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    :root{
+        --nav-padding : 18px 0 ;
+    }
+}
+
+@media screen and (max-width : 340px) {
+    :root{
+        --logo-link : 18px ;
+    }
+}
