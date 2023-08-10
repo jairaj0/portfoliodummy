@@ -21,7 +21,6 @@ nav .logo span , .links .link{
 nav .logo span:first-child{
     -webkit-text-stroke: 1px var(--light);
     -moz-text-stroke: 1px var(--light);
-    text-stroke: 1px var(--light);
     color: transparent;
 }
 
@@ -47,7 +46,9 @@ nav .links .link:hover:before{
     width: 100%;
 }
 
-@media screen and (max-width : 647px) {
+/* ************* Responsive ****************  */
+
+@media screen and (max-width : 650px) {
     :root{
         --nav-padding : 20px 0 ;
     }
@@ -59,7 +60,7 @@ nav .links .link:hover:before{
     }
 }
 
-@media screen and (max-width : 340px) {
+@media screen and (max-width : 350px) {
     :root{
         --logo-link : 18px ;
     }
